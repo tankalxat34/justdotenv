@@ -8,7 +8,7 @@ import re
 
 
 def strip(s: str) -> str:
-    """Aplly classic `strip` method to string"""
+    """Apply classic `strip` method to string"""
     return s.strip()
 
 
