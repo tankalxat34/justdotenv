@@ -27,7 +27,7 @@ class DotEnv:
         :param path - path to file `.env`
         """
 
-        with open(path, "r", encoding="utf-8") as env:
+        with open(path, "r", encoding=encoding) as env:
             strings = list(map(strip, env.readlines()))
 
         for line in strings:
