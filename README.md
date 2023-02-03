@@ -1,2 +1,2 @@
 # justdotenv
-Python module for .env file
+Python module for parsing .env file
