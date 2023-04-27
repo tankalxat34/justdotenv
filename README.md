@@ -11,8 +11,8 @@ curl https://raw.githubusercontent.com/tankalxat34/justdotenv/main/dotenv.py -o 
 ## Example of use
 
 ```py
->>> import dotenv
->>> _env = dotenv.DotEnv()
+>>> import justdotenv
+>>> _env = justdotenv.DotEnv()
 
 >>> print(_env)
 DotEnv(ALLUSERSPROFILE=C:\\ProgramData, ... TOKEN=wefawerrgfearsg34gw3qgg4, NAME=alex123, TEST=1)
