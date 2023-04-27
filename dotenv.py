@@ -45,6 +45,17 @@ class DotEnv:
         if use_global_envs:
             for k in list(dict(os.environ).keys()):
                 v = os.environ[k]
+                # apply types
+                if parse_float and "." in v:
+                    try:
+                        v = float(v)
+                    except ValueError:
+                        pass
+                elif parse_int:
+                    try:
+                        v = int(v)
+                    except ValueError:
+                        pass
                 self.__setattr__(k, v)
 
 
